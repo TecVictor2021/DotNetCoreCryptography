@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <ProjectGuid>70F31DD8-AFD5-4353-B109-045481B8A93C</ProjectGuid>
+  </PropertyGroup>
+
+</Project>
