@@ -28,10 +28,10 @@ Write-host "assemblyFileVersion            = $assemblyFileVersion"
 Write-host "nugetPackageVersion            = $nugetPackageVersion"
 
 # Now restore packages and build everything.
-dotnet restore "$runningDirectory/src/DotNetCoreCryptography.sln"
-dotnet test "$runningDirectory/src/DotNetCoreCryptography.Tests/DotNetCoreCryptography.Tests.csproj" /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
-dotnet build "$runningDirectory/src/DotNetCoreCryptography.sln" --configuration release
-dotnet pack "$runningDirectory/src/DotNetCoreCryptographyCore/DotNetCoreCryptographyCore.csproj" --configuration release -o "$runningDirectory/artifacts/NuGet" /p:PackageVersion=$nugetPackageVersion /p:AssemblyVersion=$assemblyVer /p:FileVersion=$assemblyFileVer /p:InformationalVersion=$assemblyInformationalVersion
+dotnet restore "$runningDirectory/api/MarketTecBotApiNet5.sln"
+dotnet test "$runningDirectory/api/MarketTecBotApiNet5.Tests/MarketTecBotApiNet5.Tests.csproj" /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+dotnet build "$runningDirectory/api/MarketTecBotApiNet5.sln" --configuration release
+dotnet pack "$runningDirectory/api/MarketTecBotApiNet5/MarketTecBotApiNet5.csproj" --configuration release -o "$runningDirectory/artifacts/NuGet" /p:PackageVersion=$nugetPackageVersion /p:AssemblyVersion=$assemblyVer /p:FileVersion=$assemblyFileVer /p:InformationalVersion=$assemblyInformationalVersion
 
 if ($true -eq $nugetPublish) 
 {
