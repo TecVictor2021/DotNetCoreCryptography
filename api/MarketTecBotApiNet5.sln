@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32002.185
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketTecBotApiNet5", "MarketTecBotApiNet5\MarketTecBotApiNet5.csproj", "{B0BC0E35-F23C-4785-9671-A1A53E115D66}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketTecBotApiNet5.Test", "MarketTecBotApiNet5.Test\MarketTecBotApiNet5.Test.csproj", "{588E8EEB-D4D2-4B2B-B8E8-4E446727647C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D8554BA-14E7-4E6F-8620-39C42D41D255}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0BC0E35-F23C-4785-9671-A1A53E115D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0BC0E35-F23C-4785-9671-A1A53E115D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0BC0E35-F23C-4785-9671-A1A53E115D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0BC0E35-F23C-4785-9671-A1A53E115D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{588E8EEB-D4D2-4B2B-B8E8-4E446727647C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588E8EEB-D4D2-4B2B-B8E8-4E446727647C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588E8EEB-D4D2-4B2B-B8E8-4E446727647C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588E8EEB-D4D2-4B2B-B8E8-4E446727647C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF4199B7-8D13-43EF-9472-1B4AF3CDB8AC}
+	EndGlobalSection
+EndGlobal
