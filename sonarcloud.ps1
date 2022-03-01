@@ -28,7 +28,7 @@ dotnet tool run dotnet-sonarscanner begin /k:"testingdotnetcorecrypto" /v:"$asse
 
 dotnet restore src
 dotnet build src --configuration release
-dotnet test "./src/DotNetCoreCryptography.Tests/DotNetCoreCryptography.Tests.csproj" --collect:"XPlat Code Coverage" --results-directory TestResults/ --logger "trx;LogFileName=unittests.trx" --no-build --no-restore --configuration release -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover
+dotnet test "./api/MarketTecBotApiNet5.Tests/MarketTecBotApiNet5.Tests.csproj" --collect:"XPlat Code Coverage" --results-directory TestResults/ --logger "trx;LogFileName=unittests.trx" --no-build --no-restore --configuration release -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover
          
 
 dotnet tool run dotnet-sonarscanner end /d:sonar.login="$sonarSecret"
