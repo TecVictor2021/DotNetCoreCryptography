@@ -17,7 +17,7 @@ if (Test-Path $testOutputDir)
 }
 
 
-$version = Invoke-Gitversion
+$version = 5.2.4 # Invoke-Gitversion
 $assemblyVer = $version.assemblyVersion 
 
 $branch = git branch --show-current
